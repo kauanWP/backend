@@ -14,7 +14,7 @@ app.use(express.json());
 const ALLOWED_ORIGINS = [
   'http://localhost:3000',
   'http://localhost:13000',
-  'https://SEU-USUARIO.github.io' // <-- troque SEU-USUARIO
+  'https://kauanWP.github.io' // <-- troque SEU-USUARIO
 ];
 app.use(cors({
   origin: (origin, cb) => cb(null, !origin || ALLOWED_ORIGINS.some(o => origin.startsWith(o))),
